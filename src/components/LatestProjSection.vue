@@ -59,15 +59,35 @@
 <script setup>
 import { ref, computed } from 'vue';
 
+import dashboard1 from "@/assets/projects/Dashboards/project-1.jpeg";
+import dashboard2 from "@/assets/projects/Dashboards/project-2.jpeg";
+import dashboard3 from "@/assets/projects/Dashboards/project-3.jpeg";
+
+import ais1 from "@/assets/projects/AIS/project-1.jpeg";
+import ais2 from "@/assets/projects/AIS/project-2.jpeg";
+import ais3 from "@/assets/projects/AIS/project-3.jpeg";
+
+import dss1 from "@/assets/projects/DSS/project-1.jpeg";
+import dss2 from "@/assets/projects/DSS/project-2.jpeg";
+import dss3 from "@/assets/projects/DSS/project-3.jpeg";
+
+import dsr1 from "@/assets/projects/DSR/project-1.jpeg";
+import dsr2 from "@/assets/projects/DSR/project-2.jpeg";
+import dsr3 from "@/assets/projects/DSR/project-3.jpeg";
+import dsr4 from "@/assets/projects/DSR/project-4.jpeg";
+import dsr5 from "@/assets/projects/DSR/project-5.jpeg";
+
+import gis1 from "@/assets/projects/GIS/project-1.jpeg";
+import gis2 from "@/assets/projects/GIS/project-2.jpeg";
+import gis3 from "@/assets/projects/GIS/project-3.jpeg";
+import gis4 from "@/assets/projects/GIS/project-4.jpeg";
+
+
 const Projects = ref([
     {
         id: 1,
         category: 'Web Development',
-        images: [
-            "src/assets/projects/Dashboards/project-1.jpeg",
-            "src/assets/projects/Dashboards/project-2.jpeg",
-            "src/assets/projects/Dashboards/project-3.jpeg",
-        ],
+        images: [dashboard1, dashboard2, dashboard3],
         title: 'Agriculture Dashboards',
         description: 'A comprehensive web-based dashboard system designed to visualize key performance indicators (KPIs), insights, and critical operational data for the banana industry. The dashboards cater to different parameters and operations, enabling management to make data-driven decisions that enhance productivity and efficiency. Using Vue.js for the frontend and PHP for the backend, this project offers interactive charts, real-time data updates, and customizable reports to provide a clear overview of farm performance, supply chain metrics, and other essential indicators.',
         technologies: ['Vue JS', 'PHP'],
@@ -75,11 +95,7 @@ const Projects = ref([
     {
         id: 2,
         category: 'Web Development',
-        images: [
-            "src/assets/projects/AIS/project-1.jpeg",
-            "src/assets/projects/AIS/project-2.jpeg",
-            "src/assets/projects/AIS/project-3.jpeg",
-        ],
+        images: [ais1, ais2, ais3],
         title: 'Agriculture Information System',
         description: 'A collaborative web application designed to generate insightful reports, visualizations, and analyses for different departments within the agricultural sector. This system consolidates raw data and transforms it into structured dashboards, graphs, and tables, helping teams analyze trends, identify key patterns, and improve operational strategies. Built with JavaScript and PHP, the system ensures seamless data representation, enabling stakeholders to make well-informed decisions.',
         technologies: ['Javascript', 'PHP'],
@@ -87,11 +103,7 @@ const Projects = ref([
     {
         id: 3,
         category: 'Web Development',
-        images: [
-            "src/assets/projects/DSS/project-1.jpeg",
-            "src/assets/projects/DSS/project-2.jpeg",
-            "src/assets/projects/DSS/project-3.jpeg",
-        ],
+        images: [dss1, dss2, dss3],
         title: 'Data Submission System',
         description: 'A web-based system designed to streamline the data submission process for field staff. Instead of direct data entry, field staff manually encode their data in Excel, where a VBA script checks for errors and ensures data accuracy before generating a CSV file. This CSV is then uploaded through the web app, which stores the data in a structured database. I was responsible for developing the backend logic to validate and process uploaded files, ensuring that only clean and verified data is accepted. The system also includes an admin panel for managing users, parameters, and access levels, making it easier to generate accurate reports and insights.',
         technologies: ['Javascript', 'PHP'],
@@ -99,13 +111,7 @@ const Projects = ref([
     {
         id: 4,
         category: 'Web Development',
-        images: [
-            "src/assets/projects/DSR/project-1.jpeg",
-            "src/assets/projects/DSR/project-2.jpeg",
-            "src/assets/projects/DSR/project-3.jpeg",
-            "src/assets/projects/DSR/project-4.jpeg",
-            "src/assets/projects/DSR/project-5.jpeg",
-        ],
+        images: [dsr1, dsr2, dsr3, dsr4, dsr5],
         title: 'Data & Service Request System',
         description: 'A web-based request management system that enables employees from different departments to request specific datasets, whether raw, processed, or cleaned, for use in their reports and analyses. Additionally, the system allows users to request services such as custom dashboard development, data visualization, and web application solutions tailored to their needs. Built using JavaScript and PHP, this platform streamlines internal data-sharing processes, making it easier for teams to collaborate and leverage data for better decision-making.',
         technologies: ['Javascript', 'PHP'],
@@ -113,12 +119,7 @@ const Projects = ref([
     {
         id: 5,
         category: 'Web Development',
-        images: [
-            "src/assets/projects/GIS/project-1.jpeg",
-            "src/assets/projects/GIS/project-2.jpeg",
-            "src/assets/projects/GIS/project-3.jpeg",
-            "src/assets/projects/GIS/project-4.jpeg",
-        ],
+        images: [gis1, gis2, gis3, gis4],
         title: 'Geographical Information System',
         description: 'A GIS-based system developed to map and monitor banana plantations efficiently. The project started with manually drawing plantation boundaries using Inkscape, where the shapes were color-coded based on various plantation data and legend classifications. Over time, the system transitioned to Google Maps API, allowing satellite imagery layers to be overlaid with real-time plantation data. Additionally, drone-captured images are integrated as a separate layer, providing quarterly insights into plantation conditions. QGIS was also utilized to ensure accurate shape drawing and geospatial analysis, making the system a powerful tool for farm monitoring and decision-making.',
         technologies: ['Javascript', 'Vue JS', 'PHP', 'Inkscape', 'QGIS'],
