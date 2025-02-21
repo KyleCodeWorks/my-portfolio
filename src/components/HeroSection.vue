@@ -23,7 +23,7 @@
                     <a href="#about" class="btn btn-primary">
                         More About Me
                     </a>
-                    <a href="/Resume.pdf" download="KyleSoriben_Resume.pdf"
+                    <a href="/my-portfolio/Resume.pdf" download="KyleSoriben_Resume.pdf"
                         class="btn btn-primary hover:scale-105 transition-all ease-in-out">
                         Download Resume
                     </a>
