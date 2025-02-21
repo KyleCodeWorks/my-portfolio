@@ -18,7 +18,7 @@
                     </li>
                 </ul>
             </div>
-            <a class="btn btn-ghost text-xl">LOGO</a>
+            <a href="#about" class="btn btn-ghost text-xl">KYLE SORIBEN</a>
         </div>
 
         <div class="navbar-end hidden lg:flex">
@@ -41,7 +41,6 @@ const Menu = ref([
     { name: 'About Me', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '#contact' },
 ]);
 

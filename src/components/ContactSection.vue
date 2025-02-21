@@ -1,6 +1,9 @@
 <script setup>
 import { ref } from "vue";
 import emailjs from "emailjs-com";
+import { useToast } from 'vue-toastification';
+
+const toast = useToast();
 
 // Reactive form data
 const form = ref({
@@ -8,9 +11,6 @@ const form = ref({
     name: "",
     message: "",
 });
-
-// Toast visibility
-const showToast = ref(false);
 
 // Function to send email
 const sendEmail = async () => {
@@ -21,31 +21,26 @@ const sendEmail = async () => {
     };
 
     try {
-        // Replace placeholders with your EmailJS service and template details
         await emailjs.send(
-            "service_bfdhrrt", // Replace with your EmailJS service ID
-            "template_3uig8pm", // Replace with your EmailJS template ID
+            import.meta.env.VITE_EMAILJS_SERVICE_ID, // Service ID from .env
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Template ID from .env
             templateParams,
-            "Z9b4Er-nOLIcGERuy" // Replace with your EmailJS public key
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY // Public key from .env
         );
-
-        // Show success toast
-        showToast.value = true;
 
         // Reset the form
         form.value.email = "";
         form.value.name = "";
         form.value.message = "";
 
-        // Hide toast after 3 seconds
-        setTimeout(() => {
-            showToast.value = false;
-        }, 3000);
+        toast.success("Thank you for contacting me, I'll get back to you soon.");
     } catch (error) {
         console.error("Failed to send email:", error);
+        toast.error("Failed to send email.");
     }
 };
 </script>
+
 
 
 <template>
@@ -53,7 +48,10 @@ const sendEmail = async () => {
         <div class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 xl:px-16">
             <!-- Left Section -->
             <div data-aos="flip-left">
-                <h2 class="text-4xl font-bold text-left mb-8 md:mt-0 mt-8">Let's Connect Together</h2>
+                <h2 class="text-4xl font-bold text-left mb-8 md:mt-0 mt-8">Let's
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"> Connect
+                        Together</span>
+                </h2>
                 <!-- Left Section -->
                 <div class="flex flex-col items-center">
                     <!-- Intro Text -->
@@ -161,10 +159,5 @@ const sendEmail = async () => {
 
         </div>
     </section>
-    <div v-if="showToast" class="toast toast-center toast-middle">
-        <div class="alert alert-success">
-            <span>Thank you for contacting me, I'll get back to you soon.</span>
-        </div>
-    </div>
 
 </template>

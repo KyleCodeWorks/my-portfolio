@@ -1,6 +1,6 @@
 <template>
     <div class="hero min-h-screen relative">
-        <div class="hero-content flex-col md:flex-row">
+        <div class="hero-content flex-col md:flex-row" data-aos="zoom-in-up">
             <div class="relative">
                 <!-- Lightning Effect -->
                 <div
@@ -11,7 +11,7 @@
             </div>
             <div class="md:ml-10 lg:ml-20">
                 <h1 class="text-5xl font-bold md:text-left text-center">Hey, I'm Kyle!</h1>
-                <p class="py-6">
+                <p class="text-xl py-6">
                     Experienced data analyst with 6 years of expertise in SQL, database management, and advanced data
                     visualization techniques. Proficient in transforming complex datasets into actionable insights
                     through data modeling, trend analysis, and predictive analytics. Skilled in web development using
@@ -20,10 +20,10 @@
                     workflows, and deliver measurable improvements in business outcomes.
                 </p>
                 <div class="flex items-center gap-x-4">
-                    <button class="btn btn-primary">
+                    <a href="#about" class="btn btn-primary">
                         More About Me
-                    </button>
-                    <a href="/resume.pdf" download="resume.pdf"
+                    </a>
+                    <a href="/Resume.pdf" download="KyleSoriben_Resume.pdf"
                         class="btn btn-primary hover:scale-105 transition-all ease-in-out">
                         Download Resume
                     </a>

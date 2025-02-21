@@ -3,7 +3,9 @@
         <div class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 xl:px-16">
             <!-- Education Section -->
             <div data-aos="flip-left">
-                <h2 class="text-4xl font-bold text-left mb-8 md:mt-0 mt-8">My Education</h2>
+                <h2 class="text-4xl font-bold text-left mb-8 md:mt-0 mt-8">My
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Education</span>
+                </h2>
                 <div class="space-y-8 py-8" data-aos="fade-left">
                     <div class="grid grid-cols-1 gap-4">
                         <div v-for="element in education" :key="element.id"
