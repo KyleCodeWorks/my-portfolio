@@ -9,6 +9,7 @@ export default defineConfig({
     vue(),
     tailwindcss()
   ],
+  base: "/my-portfolio/",
   define: {
     'process.env': process.env
   },
