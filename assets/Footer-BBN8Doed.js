@@ -1,1 +1,0 @@
-import{_ as t,o,c as s,a as e}from"./index-BkJPXMbl.js";const n={},a={class:"mt-8 border z-10 border-t-[#33353F] border-l-transparent border-r-transparent"};function c(l,r){return o(),s("footer",a,r[0]||(r[0]=[e("div",{class:"container p-12 flex"},[e("p",null,"All rights reserved.")],-1)]))}const _=t(n,[["render",c]]);export{_ as default};
