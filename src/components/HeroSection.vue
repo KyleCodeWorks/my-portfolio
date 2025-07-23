@@ -12,7 +12,7 @@
             <div class="md:ml-10 lg:ml-20">
                 <h1 class="text-5xl font-bold md:text-left text-center">Hey, I'm Kyle!</h1>
                 <p class="text-xl py-6">
-                    Experienced data analyst with 6 years of expertise in SQL, database management, and advanced data
+                    Experienced data analyst with over 6 years of expertise in SQL, database management, and advanced data
                     visualization techniques. Proficient in transforming complex datasets into actionable insights
                     through data modeling, trend analysis, and predictive analytics. Skilled in web development using
                     PHP to create dynamic applications that streamline processes and enhance operational efficiency.

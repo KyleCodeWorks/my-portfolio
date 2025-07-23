@@ -95,7 +95,7 @@
                             </svg>
                         </div>
                         <div class="stat-title">Blood Donations</div>
-                        <div class="stat-value text-red-400">+12</div>
+                        <div class="stat-value text-red-400">+14</div>
                     </div>
                 </div>
             </div>
