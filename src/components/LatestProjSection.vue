@@ -82,10 +82,22 @@ import gis2 from "@/assets/projects/GIS/project-2.jpeg";
 import gis3 from "@/assets/projects/GIS/project-3.jpeg";
 import gis4 from "@/assets/projects/GIS/project-4.jpeg";
 
+import dls1 from "@/assets/projects/DLS/project-1.jpeg";
+import dls2 from "@/assets/projects/DLS/project-2.jpeg";
+import dls3 from "@/assets/projects/DLS/project-3.jpeg";
+import dls4 from "@/assets/projects/DLS/project-4.jpeg";
 
 const Projects = ref([
     {
         id: 1,
+        category: 'Web Development',
+        images: [dls1, dls2, dls3, dls4],
+        title: 'Document Library System',
+        description: 'A secure document management platform built with Laravel 12, React, and ShadCN UI. Designed for organizations that need a centralized and confidential space to upload, manage, and share documents, DLS features role-based access control and LDAP authentication for seamless integration with enterprise directories. It balances flexibility, security, and usability for efficient document workflows.',
+        technologies: ['Laravel', 'React JS', 'Inertia', 'PHP', 'ShadCN UI'],
+    },
+    {
+        id: 2,
         category: 'Web Development',
         images: [dashboard1, dashboard2, dashboard3],
         title: 'Agriculture Dashboards',
@@ -93,7 +105,7 @@ const Projects = ref([
         technologies: ['Vue JS', 'PHP'],
     },
     {
-        id: 2,
+        id: 3,
         category: 'Web Development',
         images: [ais1, ais2, ais3],
         title: 'Agriculture Information System',
@@ -101,7 +113,7 @@ const Projects = ref([
         technologies: ['Javascript', 'PHP'],
     },
     {
-        id: 3,
+        id: 4,
         category: 'Web Development',
         images: [dss1, dss2, dss3],
         title: 'Data Submission System',
@@ -109,7 +121,7 @@ const Projects = ref([
         technologies: ['Javascript', 'PHP'],
     },
     {
-        id: 4,
+        id: 5,
         category: 'Web Development',
         images: [dsr1, dsr2, dsr3, dsr4, dsr5],
         title: 'Data & Service Request System',
@@ -117,7 +129,7 @@ const Projects = ref([
         technologies: ['Javascript', 'PHP'],
     },
     {
-        id: 5,
+        id: 6,
         category: 'Web Development',
         images: [gis1, gis2, gis3, gis4],
         title: 'Geographical Information System',
